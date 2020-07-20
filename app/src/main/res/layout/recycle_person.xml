@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="95dp">
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rev_person"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#05df29"
+            android:id="@+id/img_on"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/name"
+            android:layout_marginStart="-15dp"
+            android:layout_toRightOf="@id/profile_img"
+            android:layout_toEndOf="@id/profile_img"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#bfbfbf"
+            android:id="@+id/img_off"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/name"
+            android:layout_marginStart="-15dp"
+            android:layout_toRightOf="@id/profile_img"
+            android:layout_toEndOf="@id/profile_img"/>
+
+        <TextView
+            android:layout_toEndOf="@id/profile_img"
+            android:layout_centerVertical="true"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#686868"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_marginEnd="10dp"
+        android:layout_alignEnd="@id/rev_person"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/delete">
+    </ImageView>
+
+</RelativeLayout>

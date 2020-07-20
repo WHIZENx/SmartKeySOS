@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SosActivity"
+    android:fillViewport="true"
+    android:background="#FFB9B9">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/per_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/danger">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <Button
+            android:id="@+id/receive"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/per_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive"
+            android:background="@drawable/success_button">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/reg_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/receive"
+            android:layout_alignBottom="@id/receive"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/receive"
+            android:id="@+id/name"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="30sp">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/name"
+            android:id="@+id/id"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="35sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Latitude: None">
+        </TextView>
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Longitude: None">
+        </TextView>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text=" Location: Loading...">
+        </TextView>
+
+        <com.google.android.gms.maps.MapView
+            android:visibility="gone"
+            android:id="@+id/map"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/location">
+        </com.google.android.gms.maps.MapView>
+
+    </RelativeLayout>
+
+</ScrollView>

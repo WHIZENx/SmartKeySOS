@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1014249562098",
+    "firebase_url": "https://smartkeysos.firebaseio.com",
+    "project_id": "smartkeysos",
+    "storage_bucket": "smartkeysos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014249562098:android:ee7e71f8fd277ec089956b",
+        "android_client_info": {
+          "package_name": "com.cmu.project.sosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014249562098-vqb5von7jj0ilvqkr3c7htl8902tec4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmu.project.sosapp",
+            "certificate_hash": "9270b3cf1527603c7472f1e52627dfa272f77271"
+          }
+        },
+        {
+          "client_id": "1014249562098-o7ba9simvo9tgte06bgs8h01qhgtkr5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzzGw4gBNpAOT-uFdrtFl-onhbvREGtl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014249562098-o7ba9simvo9tgte06bgs8h01qhgtkr5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

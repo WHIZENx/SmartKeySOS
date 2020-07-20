@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/add_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/person">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/name"
+            android:id="@+id/id"
+            android:padding="10dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#EBEBEB"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="ID"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/add_img"
+            android:id="@+id/name"
+            android:padding="10dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#EBEBEB"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="Name"
+            android:inputType="text"/>
+
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/add"
+            android:background="@drawable/success_button"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ADD">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/reg_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/add"
+            android:layout_alignBottom="@id/add"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SettingActivity"
+    android:fillViewport="true"
+    android:id="@+id/scroll">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/detect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/warn_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Detect your current location">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/reg_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/detect"
+            android:layout_alignBottom="@id/detect"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Latitude: None">
+        </TextView>
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Longitude: None">
+        </TextView>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text=" Location: None">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rev"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                >
+            </com.google.android.gms.maps.MapView>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView >

@@ -1,6 +1,9 @@
 # SmartKeySOS ![Icon](https://www.img.in.th/images/23a522b6429b727ede01e5679bed06ec.png "Icon")
 ### *001225 [English in Science and Technology Context] Project Chiang Mai University Computer Science 2020*
 
+Bokennoneko เป็นโปรเจคที่กลุ่มนักศึกษามหาวิทยาลัยเชียงใหม่ชั้นปีที่ 2 ปีการศึกษา 2561 ทำขึ้นมาใน รายวิชา 001225 [English in Science and Technology Context]
+เป็นแอพขอความช่วยเหลือ และส่งพิกัดขอคนที่ส่งข้อความช่วยเหลือ ให้เพื่อนหรือคนรู้จักได้ทราบ แล้วสามารถตามหาจากพิกัดได้ทันที
+
 ## Installation
 > แอพนี้รองรับเฉพาะระบบปฏิบัติการ Android version 4.4 (API 19) ขึ้นไป
 > - สามารถ download ได้ตรง Releases Application!
